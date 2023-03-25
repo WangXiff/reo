@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .white {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg {
+        margin: 8px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .yy {
+        box-shadow: 10px 5px 5px rgb(146, 141, 141);
+      }
+      .po {
+        text-align: center;
+      }
+      .dh{
+        border-bottom: 1px solid #17a23a;
+        padding: 20px 20px;
+        font-size: 20px;
+        color: #17a23a;
+        text-align: left;
+
+      }
+      @media (max-width:600px) {
+        .cebian{
+          display: none;
+        }
+        .neirong{
+          flex-direction: column;
+        }
+        .shuju{
+          flex-direction: column;
+        }
+      }
+    
+      
+    </style>
+  </head>
+  <body class="flex" class="white">
+    <div style="width: 200px; text-align: center; padding: 1px" class="cebian">
+      <div style="padding: 10px;align-items: center;justify-content: center;border-bottom: 0.5px solid black;"class="flex">
+        <img
+          src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201606%2F09%2F20160609132322_aYHQ4.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1682303868&t=e425658e903fec381ec625689f1d835d"
+          alt="一阐"
+          height="50px"
+          width="50px"
+        />
+        <div style="margin-left: 10px;" >王熙</div>
+      </div>
+      <div class="flex1">
+        <div class="dh">导航</div>
+        <div class="dh">导航</div>
+        <div class="dh">导航</div>
+      </div>
+      
+        
+        
+        <a href="https://wangxiff.github.io/reo/wxx.html" >友情链接</a>
+      </div>
+    </div>
+    <div class="flex1 flex column">
+      <div style="height: 60px; z-index: 1" class="white yy"></div>
+      <div style="overflow: auto" class=" neirong flex1 flex">
+        <!--zuo-->
+        <div style="flex: 3" class="flex column mg">
+          <!--数据-->
+          <div class="flex shuju">
+            <!--数据块-->
+            <div
+              style="height: 100px; text-align: center"
+              class="flex1 white mgr yy"
+            >
+              <b>项目一</b>
+            </div>
+            <div
+              style="height: 100px; text-align: center"
+              class="flex1 white mgr yy"
+            >
+              <b>项目二</b>
+            </div>
+            <div
+              style="height: 100px; text-align: center"
+              class="flex1 white mgr yy"
+            >
+              <b>项目三</b>
+            </div>
+            <div
+              style="height: 100px; text-align: center"
+              class="flex1 white mgr yy"
+            >
+              <b>项目四</b>
+            </div>
+          </div>
+          <!---->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="white mgt yy po">工作经历</div>
+            <div style="height: 160px" class="white mgt yy po">家庭状况</div>
+            <div style="height: 160px" class="white mgt yy po">业余爱好</div>
+            <div style="height: 160px" class="white mgt yy po">情感经历</div>
+            <div style="height: 160px" class="white mgt yy po">擅长领域</div>
+          </div>
+        </div>
+        <!--you-->
+        <div style="flex: 1" class="flex column mgr mgt po">
+          <!--提示区-->
+          <div
+            style="height: 100px; font-size: larger; color: green"
+            class="yy"
+          >
+            吐槽区
+          </div>
+          <!--消息区-->
+          <div style="height: 300px" class="white mgt yy">
+            <b>每日记录：</b>
+            镜子前，我常独坐发呆，思考乏味的过往，忽听见，甲说，安稳的日子好，乙却反驳说，曲折的人生方精彩，我说，人都似你们一般双标吗？他们摇头说我无可救药。慢慢地，我发现甲乙就是我，我无药可救！
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
